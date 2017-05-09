@@ -1,0 +1,6 @@
+framework module Pods_AutoScout24_Tech_Challenge {
+  umbrella header "Pods-AutoScout24 Tech_Challenge-umbrella.h"
+
+  export *
+  module * { export * }
+}
