@@ -6,8 +6,14 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Favorite-->
         <scene sceneID="7GF-YB-9XY">
@@ -39,15 +45,97 @@
                     <view key="view" contentMode="scaleToFill" id="ckX-T2-eBL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="IS0-Zd-k2c">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CarCell" rowHeight="100" id="u7N-eu-bRO" customClass="CarCell" customModule="AutoScout24_Tech_Challenge" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="u7N-eu-bRO" id="9yh-CI-5gc">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mercedes-Benz" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qcs-8d-NCg">
+                                                    <rect key="frame" x="8" y="8" width="122" height="24"/>
+                                                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="31944 Km" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tC9-O5-bcR">
+                                                    <rect key="frame" x="8" y="40" width="120" height="24"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="120" id="jOo-IM-QrE"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4659 $" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IGA-a6-iza">
+                                                    <rect key="frame" x="247" y="8" width="120" height="24"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="120" id="wjI-SH-Qxf"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="U6g-xR-et9">
+                                                    <rect key="frame" x="318" y="60" width="51" height="31"/>
+                                                </switch>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Benzin" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kei-63-tFT">
+                                                    <rect key="frame" x="8" y="72" width="54" height="24"/>
+                                                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Qcs-8d-NCg" firstAttribute="baseline" secondItem="IGA-a6-iza" secondAttribute="baseline" id="Qgf-TX-tkv"/>
+                                                <constraint firstItem="IGA-a6-iza" firstAttribute="trailing" secondItem="9yh-CI-5gc" secondAttribute="trailingMargin" id="Sfx-dk-fNL"/>
+                                                <constraint firstItem="Qcs-8d-NCg" firstAttribute="leading" secondItem="9yh-CI-5gc" secondAttribute="leadingMargin" id="Zup-dS-7ec"/>
+                                                <constraint firstItem="U6g-xR-et9" firstAttribute="top" secondItem="IGA-a6-iza" secondAttribute="bottom" constant="28" id="gSe-0M-Ba1"/>
+                                                <constraint firstItem="Qcs-8d-NCg" firstAttribute="leading" secondItem="tC9-O5-bcR" secondAttribute="leading" id="jGy-ve-YIA"/>
+                                                <constraint firstItem="tC9-O5-bcR" firstAttribute="top" secondItem="Qcs-8d-NCg" secondAttribute="bottom" constant="8" symbolic="YES" id="mAL-QQ-bbP"/>
+                                                <constraint firstItem="kei-63-tFT" firstAttribute="top" secondItem="tC9-O5-bcR" secondAttribute="bottom" constant="8" symbolic="YES" id="mYh-wa-0Tg"/>
+                                                <constraint firstItem="Qcs-8d-NCg" firstAttribute="top" secondItem="9yh-CI-5gc" secondAttribute="topMargin" id="sbk-KH-u7a"/>
+                                                <constraint firstItem="IGA-a6-iza" firstAttribute="trailing" secondItem="U6g-xR-et9" secondAttribute="trailing" id="xXz-oJ-VOi"/>
+                                                <constraint firstItem="tC9-O5-bcR" firstAttribute="leading" secondItem="kei-63-tFT" secondAttribute="leading" id="zDA-7R-Tel"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="isFavorited" destination="U6g-xR-et9" id="Pig-vH-5ul"/>
+                                            <outlet property="manufacturer" destination="Qcs-8d-NCg" id="Nvh-GW-QqR"/>
+                                            <outlet property="milage" destination="tC9-O5-bcR" id="u3p-Mv-tFL"/>
+                                            <outlet property="price" destination="IGA-a6-iza" id="oSC-bN-evx"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="L6p-Is-m8p" id="wq4-B0-DZq"/>
+                                    <outlet property="delegate" destination="L6p-Is-m8p" id="szb-b7-XTU"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="IS0-Zd-k2c" firstAttribute="leading" secondItem="ckX-T2-eBL" secondAttribute="leading" id="JYm-5v-hk5"/>
+                            <constraint firstItem="IS0-Zd-k2c" firstAttribute="top" secondItem="ckX-T2-eBL" secondAttribute="top" constant="20" id="Uwu-3u-IHx"/>
+                            <constraint firstAttribute="trailing" secondItem="IS0-Zd-k2c" secondAttribute="trailing" id="cNo-Z6-36I"/>
+                            <constraint firstItem="iNq-rc-Ypc" firstAttribute="top" secondItem="IS0-Zd-k2c" secondAttribute="bottom" id="hID-uC-sbf"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Cars" image="car_search" id="MbL-eb-8vb">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="tableView" destination="IS0-Zd-k2c" id="gE5-7t-OtK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EvM-yS-vcr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="688" y="-39"/>
+            <point key="canvasLocation" x="687.20000000000005" y="-39.130434782608695"/>
         </scene>
         <!--Application Tabbar-->
         <scene sceneID="6nT-O7-xkr">

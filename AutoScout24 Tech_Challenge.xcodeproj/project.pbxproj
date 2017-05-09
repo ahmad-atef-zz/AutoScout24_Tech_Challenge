@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0132EAB01EC2684500B71FFB /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0132EAAF1EC2684500B71FFB /* test.jpg */; };
 		0190DCC41EC1484200771506 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0190DCC31EC1484200771506 /* AppDelegate.swift */; };
 		0190DCC91EC1484200771506 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0190DCC71EC1484200771506 /* Main.storyboard */; };
 		0190DCCC1EC1484200771506 /* AutoScout24_Tech_Challenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0190DCCA1EC1484200771506 /* AutoScout24_Tech_Challenge.xcdatamodeld */; };
@@ -17,6 +18,8 @@
 		0190DCFD1EC16D9100771506 /* CarsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0190DCF61EC16D9100771506 /* CarsListViewController.swift */; };
 		01DA0F201EC174910086BD7C /* FavoriteCarsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DA0F1F1EC174910086BD7C /* FavoriteCarsViewController.swift */; };
 		01DA0F221EC1757E0086BD7C /* ApplicationTabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DA0F211EC1757E0086BD7C /* ApplicationTabbar.swift */; };
+		01DA0F3D1EC1EA550086BD7C /* FavoriteCarsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DA0F3C1EC1EA550086BD7C /* FavoriteCarsViewModel.swift */; };
+		01E285061EC2639F00A8690C /* CarListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E285051EC2639F00A8690C /* CarListViewModel.swift */; };
 		342F1F9637D9E0962D25CFF4 /* Pods_AutoScout24_Tech_ChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C729B4244FB67A07826C33E5 /* Pods_AutoScout24_Tech_ChallengeTests.framework */; };
 		544BEA0FE5704097BBBB5D71 /* Pods_AutoScout24_Tech_Challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9141E13D18C2A8164FA1AE82 /* Pods_AutoScout24_Tech_Challenge.framework */; };
 		86DD495A29E090AE787AD56C /* Pods_AutoScout24_Tech_ChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC09BB3B847051C11CA96321 /* Pods_AutoScout24_Tech_ChallengeUITests.framework */; };
@@ -40,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0132EAAF1EC2684500B71FFB /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpg; sourceTree = "<group>"; };
+		0132EAB21EC26C2800B71FFB /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		0190DCC01EC1484200771506 /* AutoScout24 Tech_Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AutoScout24 Tech_Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0190DCC31EC1484200771506 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0190DCC81EC1484200771506 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -57,6 +62,8 @@
 		0190DCF61EC16D9100771506 /* CarsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarsListViewController.swift; sourceTree = "<group>"; };
 		01DA0F1F1EC174910086BD7C /* FavoriteCarsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteCarsViewController.swift; sourceTree = "<group>"; };
 		01DA0F211EC1757E0086BD7C /* ApplicationTabbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationTabbar.swift; sourceTree = "<group>"; };
+		01DA0F3C1EC1EA550086BD7C /* FavoriteCarsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteCarsViewModel.swift; sourceTree = "<group>"; };
+		01E285051EC2639F00A8690C /* CarListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarListViewModel.swift; sourceTree = "<group>"; };
 		0542EB779ADFF9FB8C7D7541 /* Pods-AutoScout24 Tech_Challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoScout24 Tech_Challenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AutoScout24 Tech_Challenge/Pods-AutoScout24 Tech_Challenge.debug.xcconfig"; sourceTree = "<group>"; };
 		36C36D6062070CF4B5EDF438 /* Pods-AutoScout24 Tech_Challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoScout24 Tech_Challenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-AutoScout24 Tech_Challenge/Pods-AutoScout24 Tech_Challenge.release.xcconfig"; sourceTree = "<group>"; };
 		4890636774342EEF1143E22D /* Pods-AutoScout24 Tech_ChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoScout24 Tech_ChallengeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AutoScout24 Tech_ChallengeUITests/Pods-AutoScout24 Tech_ChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -96,6 +103,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0132EAB11EC26BE200B71FFB /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				0132EAB21EC26C2800B71FFB /* OpenSans-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		0190DCB71EC1484100771506 = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				0190DCC31EC1484200771506 /* AppDelegate.swift */,
+				0132EAAF1EC2684500B71FFB /* test.jpg */,
 				0190DCF51EC16D9100771506 /* Controllers */,
 				0190DCF71EC16D9100771506 /* Helpers */,
 				0190DCF81EC16D9100771506 /* Models */,
@@ -180,6 +196,7 @@
 		0190DCF91EC16D9100771506 /* Others */ = {
 			isa = PBXGroup;
 			children = (
+				0132EAB11EC26BE200B71FFB /* Fonts */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -195,6 +212,8 @@
 		0190DCFB1EC16D9100771506 /* View Model */ = {
 			isa = PBXGroup;
 			children = (
+				01DA0F3C1EC1EA550086BD7C /* FavoriteCarsViewModel.swift */,
+				01E285051EC2639F00A8690C /* CarListViewModel.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -354,6 +373,7 @@
 				0190DCD11EC1484200771506 /* LaunchScreen.storyboard in Resources */,
 				0190DCCE1EC1484200771506 /* Assets.xcassets in Resources */,
 				0190DCC91EC1484200771506 /* Main.storyboard in Resources */,
+				0132EAB01EC2684500B71FFB /* test.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,9 +536,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01E285061EC2639F00A8690C /* CarListViewModel.swift in Sources */,
 				0190DCFD1EC16D9100771506 /* CarsListViewController.swift in Sources */,
 				0190DCCC1EC1484200771506 /* AutoScout24_Tech_Challenge.xcdatamodeld in Sources */,
 				01DA0F201EC174910086BD7C /* FavoriteCarsViewController.swift in Sources */,
+				01DA0F3D1EC1EA550086BD7C /* FavoriteCarsViewModel.swift in Sources */,
 				01DA0F221EC1757E0086BD7C /* ApplicationTabbar.swift in Sources */,
 				0190DCC41EC1484200771506 /* AppDelegate.swift in Sources */,
 			);
