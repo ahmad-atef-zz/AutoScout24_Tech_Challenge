@@ -16,6 +16,7 @@
 		0190DCE71EC1484200771506 /* AutoScout24_Tech_ChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0190DCE61EC1484200771506 /* AutoScout24_Tech_ChallengeUITests.swift */; };
 		0190DCFD1EC16D9100771506 /* CarsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0190DCF61EC16D9100771506 /* CarsListViewController.swift */; };
 		01DA0F201EC174910086BD7C /* FavoriteCarsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DA0F1F1EC174910086BD7C /* FavoriteCarsViewController.swift */; };
+		01DA0F221EC1757E0086BD7C /* ApplicationTabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DA0F211EC1757E0086BD7C /* ApplicationTabbar.swift */; };
 		342F1F9637D9E0962D25CFF4 /* Pods_AutoScout24_Tech_ChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C729B4244FB67A07826C33E5 /* Pods_AutoScout24_Tech_ChallengeTests.framework */; };
 		544BEA0FE5704097BBBB5D71 /* Pods_AutoScout24_Tech_Challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9141E13D18C2A8164FA1AE82 /* Pods_AutoScout24_Tech_Challenge.framework */; };
 		86DD495A29E090AE787AD56C /* Pods_AutoScout24_Tech_ChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC09BB3B847051C11CA96321 /* Pods_AutoScout24_Tech_ChallengeUITests.framework */; };
@@ -55,6 +56,7 @@
 		0190DCF41EC1487D00771506 /* AutoScout24.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = AutoScout24.playground; sourceTree = "<group>"; };
 		0190DCF61EC16D9100771506 /* CarsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarsListViewController.swift; sourceTree = "<group>"; };
 		01DA0F1F1EC174910086BD7C /* FavoriteCarsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteCarsViewController.swift; sourceTree = "<group>"; };
+		01DA0F211EC1757E0086BD7C /* ApplicationTabbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationTabbar.swift; sourceTree = "<group>"; };
 		0542EB779ADFF9FB8C7D7541 /* Pods-AutoScout24 Tech_Challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoScout24 Tech_Challenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AutoScout24 Tech_Challenge/Pods-AutoScout24 Tech_Challenge.debug.xcconfig"; sourceTree = "<group>"; };
 		36C36D6062070CF4B5EDF438 /* Pods-AutoScout24 Tech_Challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoScout24 Tech_Challenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-AutoScout24 Tech_Challenge/Pods-AutoScout24 Tech_Challenge.release.xcconfig"; sourceTree = "<group>"; };
 		4890636774342EEF1143E22D /* Pods-AutoScout24 Tech_ChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoScout24 Tech_ChallengeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AutoScout24 Tech_ChallengeUITests/Pods-AutoScout24 Tech_ChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 			children = (
 				0190DCF61EC16D9100771506 /* CarsListViewController.swift */,
 				01DA0F1F1EC174910086BD7C /* FavoriteCarsViewController.swift */,
+				01DA0F211EC1757E0086BD7C /* ApplicationTabbar.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -516,6 +519,7 @@
 				0190DCFD1EC16D9100771506 /* CarsListViewController.swift in Sources */,
 				0190DCCC1EC1484200771506 /* AutoScout24_Tech_Challenge.xcdatamodeld in Sources */,
 				01DA0F201EC174910086BD7C /* FavoriteCarsViewController.swift in Sources */,
+				01DA0F221EC1757E0086BD7C /* ApplicationTabbar.swift in Sources */,
 				0190DCC41EC1484200771506 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

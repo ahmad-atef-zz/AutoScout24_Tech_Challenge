@@ -49,10 +49,10 @@
             </objects>
             <point key="canvasLocation" x="688" y="-39"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Application Tabbar-->
         <scene sceneID="6nT-O7-xkr">
             <objects>
-                <tabBarController id="RQa-8K-760" sceneMemberID="viewController">
+                <tabBarController id="RQa-8K-760" customClass="ApplicationTabbar" customModule="AutoScout24_Tech_Challenge" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="Vuk-qQ-n7Z">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
