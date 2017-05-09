@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0132EAB01EC2684500B71FFB /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0132EAAF1EC2684500B71FFB /* test.jpg */; };
+		0132EAB41EC27A7600B71FFB /* DBInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0132EAB31EC27A7600B71FFB /* DBInteractor.swift */; };
+		0132EAB61EC27EB500B71FFB /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0132EAB51EC27EB500B71FFB /* Router.swift */; };
 		0190DCC41EC1484200771506 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0190DCC31EC1484200771506 /* AppDelegate.swift */; };
 		0190DCC91EC1484200771506 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0190DCC71EC1484200771506 /* Main.storyboard */; };
 		0190DCCC1EC1484200771506 /* AutoScout24_Tech_Challenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0190DCCA1EC1484200771506 /* AutoScout24_Tech_Challenge.xcdatamodeld */; };
@@ -43,8 +44,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0132EAAF1EC2684500B71FFB /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpg; sourceTree = "<group>"; };
 		0132EAB21EC26C2800B71FFB /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		0132EAB31EC27A7600B71FFB /* DBInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBInteractor.swift; sourceTree = "<group>"; };
+		0132EAB51EC27EB500B71FFB /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		0190DCC01EC1484200771506 /* AutoScout24 Tech_Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AutoScout24 Tech_Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0190DCC31EC1484200771506 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0190DCC81EC1484200771506 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -137,7 +139,6 @@
 			isa = PBXGroup;
 			children = (
 				0190DCC31EC1484200771506 /* AppDelegate.swift */,
-				0132EAAF1EC2684500B71FFB /* test.jpg */,
 				0190DCF51EC16D9100771506 /* Controllers */,
 				0190DCF71EC16D9100771506 /* Helpers */,
 				0190DCF81EC16D9100771506 /* Models */,
@@ -182,6 +183,8 @@
 		0190DCF71EC16D9100771506 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				0132EAB31EC27A7600B71FFB /* DBInteractor.swift */,
+				0132EAB51EC27EB500B71FFB /* Router.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -373,7 +376,6 @@
 				0190DCD11EC1484200771506 /* LaunchScreen.storyboard in Resources */,
 				0190DCCE1EC1484200771506 /* Assets.xcassets in Resources */,
 				0190DCC91EC1484200771506 /* Main.storyboard in Resources */,
-				0132EAB01EC2684500B71FFB /* test.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -540,8 +542,10 @@
 				0190DCFD1EC16D9100771506 /* CarsListViewController.swift in Sources */,
 				0190DCCC1EC1484200771506 /* AutoScout24_Tech_Challenge.xcdatamodeld in Sources */,
 				01DA0F201EC174910086BD7C /* FavoriteCarsViewController.swift in Sources */,
+				0132EAB61EC27EB500B71FFB /* Router.swift in Sources */,
 				01DA0F3D1EC1EA550086BD7C /* FavoriteCarsViewModel.swift in Sources */,
 				01DA0F221EC1757E0086BD7C /* ApplicationTabbar.swift in Sources */,
+				0132EAB41EC27A7600B71FFB /* DBInteractor.swift in Sources */,
 				0190DCC41EC1484200771506 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

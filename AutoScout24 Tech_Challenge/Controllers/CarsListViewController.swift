@@ -16,10 +16,13 @@ class CarsListViewController: UIViewController {
     //MARK: - Properties -
     var dataSource : [String] = []
     var refreshControl = UIRefreshControl()
+    var carViewModel : CarListViewModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         addPullToRefresh()
+        carViewModel = CarListViewModel(viewable: self)
+        listCars()
     }
 
     func addPullToRefresh() {
@@ -28,7 +31,7 @@ class CarsListViewController: UIViewController {
     }
     
     func listCars() {
-        
+        carViewModel?.loadCars()
     }
 }
 
@@ -39,18 +42,36 @@ extension CarsListViewController : UITableViewDelegate, UITableViewDataSource{
         return 1
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return carViewModel!.numberOfItems()
+        
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
+        
         if let cell = tableView.dequeueReusableCell(withIdentifier: CarCell.Identifier) as? CarCell{
+            if let car = carViewModel?.itemAtIndex(index: indexPath.row){
+                
+            }
             return cell
         }
         return UITableViewCell()
     }
 }
 
+//MARK: - MVVM -
+extension CarsListViewController: CarViewable {
+    func reloadData() {
+        self.refreshControl.endRefreshing()
+        self.tableView.reloadData()
+    }
+    func showError(error: String){
+        
+    }
+}
 
+
+
+//MARK: - UI Car Cell -
 class CarCell: UITableViewCell {
     static let Identifier = "CarCell"
     @IBOutlet weak var milage: UILabel!

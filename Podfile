@@ -6,7 +6,8 @@ target 'AutoScout24 Tech_Challenge' do
   use_frameworks!
 
   # Pods for AutoScout24 Tech_Challenge
-
+  pod 'Alamofire', '~> 4.4'
+  
   target 'AutoScout24 Tech_ChallengeTests' do
     inherit! :search_paths
     # Pods for testing
