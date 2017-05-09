@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		0190DCC41EC1484200771506 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0190DCC31EC1484200771506 /* AppDelegate.swift */; };
-		0190DCC61EC1484200771506 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0190DCC51EC1484200771506 /* ViewController.swift */; };
 		0190DCC91EC1484200771506 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0190DCC71EC1484200771506 /* Main.storyboard */; };
 		0190DCCC1EC1484200771506 /* AutoScout24_Tech_Challenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0190DCCA1EC1484200771506 /* AutoScout24_Tech_Challenge.xcdatamodeld */; };
 		0190DCCE1EC1484200771506 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0190DCCD1EC1484200771506 /* Assets.xcassets */; };
 		0190DCD11EC1484200771506 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0190DCCF1EC1484200771506 /* LaunchScreen.storyboard */; };
 		0190DCDC1EC1484200771506 /* AutoScout24_Tech_ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0190DCDB1EC1484200771506 /* AutoScout24_Tech_ChallengeTests.swift */; };
 		0190DCE71EC1484200771506 /* AutoScout24_Tech_ChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0190DCE61EC1484200771506 /* AutoScout24_Tech_ChallengeUITests.swift */; };
+		0190DCFD1EC16D9100771506 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0190DCF61EC16D9100771506 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,10 +37,9 @@
 /* Begin PBXFileReference section */
 		0190DCC01EC1484200771506 /* AutoScout24 Tech_Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AutoScout24 Tech_Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0190DCC31EC1484200771506 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0190DCC51EC1484200771506 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0190DCC81EC1484200771506 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0190DCCB1EC1484200771506 /* AutoScout24_Tech_Challenge.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AutoScout24_Tech_Challenge.xcdatamodel; sourceTree = "<group>"; };
-		0190DCCD1EC1484200771506 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0190DCCD1EC1484200771506 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		0190DCD01EC1484200771506 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0190DCD21EC1484200771506 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0190DCD71EC1484200771506 /* AutoScout24 Tech_ChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AutoScout24 Tech_ChallengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +48,8 @@
 		0190DCE21EC1484200771506 /* AutoScout24 Tech_ChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AutoScout24 Tech_ChallengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0190DCE61EC1484200771506 /* AutoScout24_Tech_ChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoScout24_Tech_ChallengeUITests.swift; sourceTree = "<group>"; };
 		0190DCE81EC1484200771506 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0190DCF41EC1487D00771506 /* AutoScout24.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = AutoScout24.playground; sourceTree = "<group>"; };
+		0190DCF61EC16D9100771506 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +101,15 @@
 			isa = PBXGroup;
 			children = (
 				0190DCC31EC1484200771506 /* AppDelegate.swift */,
-				0190DCC51EC1484200771506 /* ViewController.swift */,
-				0190DCC71EC1484200771506 /* Main.storyboard */,
-				0190DCCD1EC1484200771506 /* Assets.xcassets */,
-				0190DCCF1EC1484200771506 /* LaunchScreen.storyboard */,
+				0190DCF51EC16D9100771506 /* Controllers */,
+				0190DCF71EC16D9100771506 /* Helpers */,
+				0190DCF81EC16D9100771506 /* Models */,
+				0190DCF91EC16D9100771506 /* Others */,
+				0190DCFA1EC16D9100771506 /* Stores */,
+				0190DCFB1EC16D9100771506 /* View Model */,
+				0190DCFC1EC16D9100771506 /* Views */,
 				0190DCD21EC1484200771506 /* Info.plist */,
-				0190DCCA1EC1484200771506 /* AutoScout24_Tech_Challenge.xcdatamodeld */,
+				0190DCF41EC1487D00771506 /* AutoScout24.playground */,
 			);
 			path = "AutoScout24 Tech_Challenge";
 			sourceTree = "<group>";
@@ -126,6 +130,60 @@
 				0190DCE81EC1484200771506 /* Info.plist */,
 			);
 			path = "AutoScout24 Tech_ChallengeUITests";
+			sourceTree = "<group>";
+		};
+		0190DCF51EC16D9100771506 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0190DCF61EC16D9100771506 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0190DCF71EC16D9100771506 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		0190DCF81EC16D9100771506 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0190DCF91EC16D9100771506 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		0190DCFA1EC16D9100771506 /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				0190DCCA1EC1484200771506 /* AutoScout24_Tech_Challenge.xcdatamodeld */,
+			);
+			path = Stores;
+			sourceTree = "<group>";
+		};
+		0190DCFB1EC16D9100771506 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		0190DCFC1EC16D9100771506 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0190DCC71EC1484200771506 /* Main.storyboard */,
+				0190DCCD1EC1484200771506 /* Assets.xcassets */,
+				0190DCCF1EC1484200771506 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,7 +323,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0190DCC61EC1484200771506 /* ViewController.swift in Sources */,
+				0190DCFD1EC16D9100771506 /* ViewController.swift in Sources */,
 				0190DCCC1EC1484200771506 /* AutoScout24_Tech_Challenge.xcdatamodeld in Sources */,
 				0190DCC41EC1484200771506 /* AppDelegate.swift in Sources */,
 			);
@@ -309,6 +367,7 @@
 				0190DCC81EC1484200771506 /* Base */,
 			);
 			name = Main.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		0190DCCF1EC1484200771506 /* LaunchScreen.storyboard */ = {
@@ -317,6 +376,7 @@
 				0190DCD01EC1484200771506 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -544,7 +604,8 @@
 				0190DCCB1EC1484200771506 /* AutoScout24_Tech_Challenge.xcdatamodel */,
 			);
 			currentVersion = 0190DCCB1EC1484200771506 /* AutoScout24_Tech_Challenge.xcdatamodel */;
-			path = AutoScout24_Tech_Challenge.xcdatamodeld;
+			name = AutoScout24_Tech_Challenge.xcdatamodeld;
+			path = ../AutoScout24_Tech_Challenge.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
