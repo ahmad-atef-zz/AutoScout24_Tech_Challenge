@@ -15,12 +15,19 @@ class CarsListViewController: UIViewController {
     
     //MARK: - Properties -
     var dataSource : [String] = []
+    var refreshControl = UIRefreshControl()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        addPullToRefresh()
     }
 
     func addPullToRefresh() {
+        tableView.refreshControl = refreshControl
+        refreshControl.addTarget(self, action: #selector(listCars), for: .valueChanged)
+    }
+    
+    func listCars() {
         
     }
 }
