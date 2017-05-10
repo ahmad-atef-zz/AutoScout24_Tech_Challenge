@@ -17,6 +17,8 @@
 		0190DCDC1EC1484200771506 /* AutoScout24_Tech_ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0190DCDB1EC1484200771506 /* AutoScout24_Tech_ChallengeTests.swift */; };
 		0190DCE71EC1484200771506 /* AutoScout24_Tech_ChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0190DCE61EC1484200771506 /* AutoScout24_Tech_ChallengeUITests.swift */; };
 		0190DCFD1EC16D9100771506 /* CarsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0190DCF61EC16D9100771506 /* CarsListViewController.swift */; };
+		019130251EC2B0AF0015E4BE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019130241EC2B0AF0015E4BE /* Constants.swift */; };
+		019130261EC2BB9F0015E4BE /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0132EAB21EC26C2800B71FFB /* OpenSans-Regular.ttf */; };
 		01DA0F201EC174910086BD7C /* FavoriteCarsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DA0F1F1EC174910086BD7C /* FavoriteCarsViewController.swift */; };
 		01DA0F221EC1757E0086BD7C /* ApplicationTabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DA0F211EC1757E0086BD7C /* ApplicationTabbar.swift */; };
 		01DA0F3D1EC1EA550086BD7C /* FavoriteCarsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DA0F3C1EC1EA550086BD7C /* FavoriteCarsViewModel.swift */; };
@@ -62,6 +64,7 @@
 		0190DCE81EC1484200771506 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0190DCF41EC1487D00771506 /* AutoScout24.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = AutoScout24.playground; sourceTree = "<group>"; };
 		0190DCF61EC16D9100771506 /* CarsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarsListViewController.swift; sourceTree = "<group>"; };
+		019130241EC2B0AF0015E4BE /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		01DA0F1F1EC174910086BD7C /* FavoriteCarsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteCarsViewController.swift; sourceTree = "<group>"; };
 		01DA0F211EC1757E0086BD7C /* ApplicationTabbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationTabbar.swift; sourceTree = "<group>"; };
 		01DA0F3C1EC1EA550086BD7C /* FavoriteCarsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteCarsViewModel.swift; sourceTree = "<group>"; };
@@ -185,6 +188,7 @@
 			children = (
 				0132EAB31EC27A7600B71FFB /* DBInteractor.swift */,
 				0132EAB51EC27EB500B71FFB /* Router.swift */,
+				019130241EC2B0AF0015E4BE /* Constants.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -375,6 +379,7 @@
 			files = (
 				0190DCD11EC1484200771506 /* LaunchScreen.storyboard in Resources */,
 				0190DCCE1EC1484200771506 /* Assets.xcassets in Resources */,
+				019130261EC2BB9F0015E4BE /* OpenSans-Regular.ttf in Resources */,
 				0190DCC91EC1484200771506 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -543,6 +548,7 @@
 				0190DCCC1EC1484200771506 /* AutoScout24_Tech_Challenge.xcdatamodeld in Sources */,
 				01DA0F201EC174910086BD7C /* FavoriteCarsViewController.swift in Sources */,
 				0132EAB61EC27EB500B71FFB /* Router.swift in Sources */,
+				019130251EC2B0AF0015E4BE /* Constants.swift in Sources */,
 				01DA0F3D1EC1EA550086BD7C /* FavoriteCarsViewModel.swift in Sources */,
 				01DA0F221EC1757E0086BD7C /* ApplicationTabbar.swift in Sources */,
 				0132EAB41EC27A7600B71FFB /* DBInteractor.swift in Sources */,

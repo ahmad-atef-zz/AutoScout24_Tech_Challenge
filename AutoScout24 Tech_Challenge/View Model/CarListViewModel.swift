@@ -9,9 +9,6 @@
 import Foundation
 
 
-class Car {
-    
-}
 
 protocol CarDataSourceProtcol {
     func loadCars()

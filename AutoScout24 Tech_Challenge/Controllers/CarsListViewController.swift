@@ -31,6 +31,7 @@ class CarsListViewController: UIViewController {
     }
     
     func listCars() {
+        refreshControl.beginRefreshing()
         carViewModel?.loadCars()
     }
 }
@@ -47,10 +48,12 @@ extension CarsListViewController : UITableViewDelegate, UITableViewDataSource{
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        
         if let cell = tableView.dequeueReusableCell(withIdentifier: CarCell.Identifier) as? CarCell{
             if let car = carViewModel?.itemAtIndex(index: indexPath.row){
-                
+                cell.milage.text = "\(car.mileage) Km"
+                cell.manufacturer.text = car.make!
+                cell.price.text = "\(car.price) $"
+                cell.isFavorited.isOn = car.isFavorited
             }
             return cell
         }
