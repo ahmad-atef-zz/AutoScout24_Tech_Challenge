@@ -14,7 +14,6 @@ class CarsListViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     //MARK: - Properties -
-    var dataSource : [String] = []
     var refreshControl = UIRefreshControl()
     static var carViewModel : CarListViewModel?
     
@@ -22,6 +21,7 @@ class CarsListViewController: UIViewController {
         super.viewDidLoad()
         addPullToRefresh()
         CarsListViewController.carViewModel = CarListViewModel(viewable: self)
+        CarsListViewController.carViewModel?.registerForNotification()
         listCars()
     }
 
@@ -85,5 +85,10 @@ class CarCell: UITableViewCell {
     @IBAction func favoriteIsTapped(_ sender: Any) {
         car?.isFavorited = isFavorited.isOn
         CarsListViewController.carViewModel?.updateCar(car: car!)
+    }
+    
+    @IBAction func unFavoriteIsTapped(_ sender: Any){
+        car?.isFavorited = isFavorited.isOn
+        FavoriteCarsViewController.carViewModel?.updateCar(car: car!)
     }
 }

@@ -9,6 +9,43 @@
 import Foundation
 
 
-class FavoriteCarsViewModel {
+class FavoriteCarsViewModel : CarDataSourceProtcol{
     
+    var dataSource : [Car] = []
+    var carViewConsumer : CarViewable
+    
+    init(viewable : CarViewable) {
+        self.carViewConsumer = viewable
+    }
+    
+    func registerForNotification() {
+        DBIntercotr.shared.addObserver(observers: self)
+    }
+    func loadCars() {
+        loadLocalCars()
+    }
+    private func loadLocalCars() {
+        let localCars = DBIntercotr.shared.loadLocalCars(favoritesOnly: true)
+        dataSource.removeAll()
+        dataSource = localCars
+        carViewConsumer.reloadData()
+    }
+    func numberOfItems() -> Int{
+        return dataSource.count
+    }
+    
+    func itemAtIndex (index : Int) -> Car{
+        return dataSource[index]
+    }
+    
+    func updateCar(car: Car){
+        DBIntercotr.shared.updateCar(car: car)
+    }
+    
+}
+
+extension FavoriteCarsViewModel : Observer{
+    func didRecieveNotification(updatedCar: Car) {
+        loadCars()
+    }
 }

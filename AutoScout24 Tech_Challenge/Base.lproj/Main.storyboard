@@ -26,13 +26,99 @@
                     <view key="view" contentMode="scaleToFill" id="1gB-FL-aXv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Pda-Fu-Chh">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CarCell" rowHeight="100" id="sEr-lK-uMY" customClass="CarCell" customModule="AutoScout24_Tech_Challenge" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sEr-lK-uMY" id="cAg-UG-bJ4">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mercedes-Benz" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NSp-AX-KqC">
+                                                    <rect key="frame" x="8" y="8" width="122" height="24"/>
+                                                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="31944 Km" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1E5-Ae-J64">
+                                                    <rect key="frame" x="8" y="40" width="120" height="24"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="120" id="dwl-L9-Fx8"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4659 $" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pr8-Cm-sO9">
+                                                    <rect key="frame" x="247" y="9" width="120" height="24"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="120" id="9yk-H5-HsR"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="9oX-pX-bnZ">
+                                                    <rect key="frame" x="318" y="60" width="51" height="31"/>
+                                                    <connections>
+                                                        <action selector="unFavoriteIsTapped:" destination="sEr-lK-uMY" eventType="valueChanged" id="X1M-nN-BCa"/>
+                                                    </connections>
+                                                </switch>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Benzin" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="enu-CI-HcX">
+                                                    <rect key="frame" x="8" y="72" width="120" height="24"/>
+                                                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="9oX-pX-bnZ" firstAttribute="top" secondItem="pr8-Cm-sO9" secondAttribute="bottom" constant="27" id="0ER-uF-VNd"/>
+                                                <constraint firstItem="1E5-Ae-J64" firstAttribute="leading" secondItem="enu-CI-HcX" secondAttribute="leading" id="OR8-wq-iHP"/>
+                                                <constraint firstItem="NSp-AX-KqC" firstAttribute="leading" secondItem="cAg-UG-bJ4" secondAttribute="leadingMargin" id="Sbp-MA-4XC"/>
+                                                <constraint firstItem="pr8-Cm-sO9" firstAttribute="trailing" secondItem="cAg-UG-bJ4" secondAttribute="trailingMargin" id="VR7-VP-K2A"/>
+                                                <constraint firstItem="1E5-Ae-J64" firstAttribute="top" secondItem="NSp-AX-KqC" secondAttribute="bottom" constant="8" symbolic="YES" id="Vv6-FB-auQ"/>
+                                                <constraint firstItem="pr8-Cm-sO9" firstAttribute="trailing" secondItem="9oX-pX-bnZ" secondAttribute="trailing" id="aSD-kf-FYf"/>
+                                                <constraint firstItem="NSp-AX-KqC" firstAttribute="leading" secondItem="1E5-Ae-J64" secondAttribute="leading" id="ggM-wB-B4Y"/>
+                                                <constraint firstItem="pr8-Cm-sO9" firstAttribute="top" secondItem="cAg-UG-bJ4" secondAttribute="topMargin" constant="1" id="oE9-r1-FZx"/>
+                                                <constraint firstItem="enu-CI-HcX" firstAttribute="top" secondItem="1E5-Ae-J64" secondAttribute="bottom" constant="8" symbolic="YES" id="tHd-Pi-eNl"/>
+                                                <constraint firstItem="NSp-AX-KqC" firstAttribute="top" secondItem="cAg-UG-bJ4" secondAttribute="topMargin" id="wrm-cs-lVU"/>
+                                                <constraint firstItem="1E5-Ae-J64" firstAttribute="trailing" secondItem="enu-CI-HcX" secondAttribute="trailing" id="yA6-xb-RgV"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="isFavorited" destination="9oX-pX-bnZ" id="uTd-mt-9aq"/>
+                                            <outlet property="manufacturer" destination="NSp-AX-KqC" id="00O-bF-8dd"/>
+                                            <outlet property="milage" destination="1E5-Ae-J64" id="P52-gX-4bz"/>
+                                            <outlet property="price" destination="pr8-Cm-sO9" id="iTb-df-miC"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="iWL-Yc-ZSJ" id="d4d-vy-jYS"/>
+                                    <outlet property="delegate" destination="iWL-Yc-ZSJ" id="8yL-LC-Xj0"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5tg-ZW-KxX" firstAttribute="top" secondItem="Pda-Fu-Chh" secondAttribute="bottom" id="KMV-nG-sUC"/>
+                            <constraint firstItem="Pda-Fu-Chh" firstAttribute="leading" secondItem="1gB-FL-aXv" secondAttribute="leading" id="Zu0-6U-CyJ"/>
+                            <constraint firstItem="Pda-Fu-Chh" firstAttribute="top" secondItem="7w5-Kc-jLj" secondAttribute="bottom" id="sF7-1G-IBc"/>
+                            <constraint firstAttribute="trailing" secondItem="Pda-Fu-Chh" secondAttribute="trailing" id="uY3-3G-uIM"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Favorite" image="favorite_cars" id="vi3-SI-0gy"/>
+                    <connections>
+                        <outlet property="tableView" destination="Pda-Fu-Chh" id="Nmg-Ka-YHN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ib2-3E-CTS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="688" y="617"/>
+            <point key="canvasLocation" x="687.20000000000005" y="616.64167916041981"/>
         </scene>
         <!--Cars-->
         <scene sceneID="VRH-l7-7tK">
@@ -58,13 +144,13 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mercedes-Benz" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qcs-8d-NCg">
-                                                    <rect key="frame" x="8" y="8" width="120.5" height="20"/>
+                                                    <rect key="frame" x="8" y="8" width="122" height="23.5"/>
                                                     <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="31944 Km" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tC9-O5-bcR">
-                                                    <rect key="frame" x="8" y="36" width="120" height="20"/>
+                                                    <rect key="frame" x="8" y="39.5" width="120" height="23.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="120" id="jOo-IM-QrE"/>
                                                     </constraints>
@@ -73,7 +159,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4659 $" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IGA-a6-iza">
-                                                    <rect key="frame" x="247" y="8" width="120" height="20"/>
+                                                    <rect key="frame" x="247" y="8" width="120" height="23.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="120" id="wjI-SH-Qxf"/>
                                                     </constraints>
@@ -82,13 +168,13 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="U6g-xR-et9">
-                                                    <rect key="frame" x="318" y="56" width="51" height="31"/>
+                                                    <rect key="frame" x="318" y="59.5" width="51" height="31"/>
                                                     <connections>
                                                         <action selector="favoriteIsTapped:" destination="u7N-eu-bRO" eventType="valueChanged" id="0gR-W8-fjn"/>
                                                     </connections>
                                                 </switch>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Benzin" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kei-63-tFT">
-                                                    <rect key="frame" x="8" y="64" width="52" height="20"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Benzin" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kei-63-tFT">
+                                                    <rect key="frame" x="8" y="64" width="54" height="23.5"/>
                                                     <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -101,7 +187,7 @@
                                                 <constraint firstItem="U6g-xR-et9" firstAttribute="top" secondItem="IGA-a6-iza" secondAttribute="bottom" constant="28" id="gSe-0M-Ba1"/>
                                                 <constraint firstItem="Qcs-8d-NCg" firstAttribute="leading" secondItem="tC9-O5-bcR" secondAttribute="leading" id="jGy-ve-YIA"/>
                                                 <constraint firstItem="tC9-O5-bcR" firstAttribute="top" secondItem="Qcs-8d-NCg" secondAttribute="bottom" constant="8" symbolic="YES" id="mAL-QQ-bbP"/>
-                                                <constraint firstItem="kei-63-tFT" firstAttribute="top" secondItem="tC9-O5-bcR" secondAttribute="bottom" constant="8" symbolic="YES" id="mYh-wa-0Tg"/>
+                                                <constraint firstItem="kei-63-tFT" firstAttribute="top" secondItem="tC9-O5-bcR" secondAttribute="bottom" constant="1" id="mYh-wa-0Tg"/>
                                                 <constraint firstItem="Qcs-8d-NCg" firstAttribute="top" secondItem="9yh-CI-5gc" secondAttribute="topMargin" id="sbk-KH-u7a"/>
                                                 <constraint firstItem="IGA-a6-iza" firstAttribute="trailing" secondItem="U6g-xR-et9" secondAttribute="trailing" id="xXz-oJ-VOi"/>
                                                 <constraint firstItem="tC9-O5-bcR" firstAttribute="leading" secondItem="kei-63-tFT" secondAttribute="leading" id="zDA-7R-Tel"/>

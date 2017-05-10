@@ -30,17 +30,19 @@ class DBIntercotr : SubjectBase{
     
     override init() {
         super.init()
-        addObserver(observers: CarsListViewController.carViewModel!)
     }
     
     let context = CONTEXT
     
-    func loadLocalCars() -> [Car] {
+    func loadLocalCars(favoritesOnly : Bool = false) -> [Car] {
         var localCars : [Car] = []
         do{
             localCars = try context.fetch(Car.fetchRequest())
         }
         catch{
+        }
+        if favoritesOnly {
+            localCars = localCars.filter({$0.isFavorited == true})
         }
         return localCars
     }

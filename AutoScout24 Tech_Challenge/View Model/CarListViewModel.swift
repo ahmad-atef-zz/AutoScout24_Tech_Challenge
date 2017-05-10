@@ -15,6 +15,7 @@ protocol CarDataSourceProtcol {
     func numberOfItems() -> Int
     func itemAtIndex (index : Int) -> Car
     func updateCar(car: Car)
+    func registerForNotification()
 }
 
 protocol CarViewable {
@@ -30,7 +31,9 @@ class CarListViewModel : CarDataSourceProtcol{
     init(viewable : CarViewable) {
         self.carViewConsumer = viewable
     }
-
+    func registerForNotification(){
+        DBIntercotr.shared.addObserver(observers: self)
+    }
     func loadCars() {
         loadRemoteCars()
     }
@@ -56,7 +59,6 @@ class CarListViewModel : CarDataSourceProtcol{
         DBIntercotr.shared.updateCar(car: car)
     }
 }
-
 
 
 //MARK: - Observer -
