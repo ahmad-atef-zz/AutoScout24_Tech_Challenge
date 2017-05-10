@@ -14,12 +14,12 @@
 		0190DCCC1EC1484200771506 /* AutoScout24_Tech_Challenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0190DCCA1EC1484200771506 /* AutoScout24_Tech_Challenge.xcdatamodeld */; };
 		0190DCCE1EC1484200771506 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0190DCCD1EC1484200771506 /* Assets.xcassets */; };
 		0190DCD11EC1484200771506 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0190DCCF1EC1484200771506 /* LaunchScreen.storyboard */; };
-		0190DCDC1EC1484200771506 /* AutoScout24_Tech_ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0190DCDB1EC1484200771506 /* AutoScout24_Tech_ChallengeTests.swift */; };
 		0190DCE71EC1484200771506 /* AutoScout24_Tech_ChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0190DCE61EC1484200771506 /* AutoScout24_Tech_ChallengeUITests.swift */; };
 		0190DCFD1EC16D9100771506 /* CarsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0190DCF61EC16D9100771506 /* CarsListViewController.swift */; };
 		019130251EC2B0AF0015E4BE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019130241EC2B0AF0015E4BE /* Constants.swift */; };
 		019130261EC2BB9F0015E4BE /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0132EAB21EC26C2800B71FFB /* OpenSans-Regular.ttf */; };
 		019130281EC2CAAF0015E4BE /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019130271EC2CAAF0015E4BE /* Observer.swift */; };
+		01BFF9371EC3B871002DE8BB /* AutoScout24Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BFF9361EC3B871002DE8BB /* AutoScout24Tests.swift */; };
 		01DA0F201EC174910086BD7C /* FavoriteCarsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DA0F1F1EC174910086BD7C /* FavoriteCarsViewController.swift */; };
 		01DA0F221EC1757E0086BD7C /* ApplicationTabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DA0F211EC1757E0086BD7C /* ApplicationTabbar.swift */; };
 		01DA0F3D1EC1EA550086BD7C /* FavoriteCarsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DA0F3C1EC1EA550086BD7C /* FavoriteCarsViewModel.swift */; };
@@ -58,7 +58,6 @@
 		0190DCD01EC1484200771506 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0190DCD21EC1484200771506 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0190DCD71EC1484200771506 /* AutoScout24 Tech_ChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AutoScout24 Tech_ChallengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0190DCDB1EC1484200771506 /* AutoScout24_Tech_ChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoScout24_Tech_ChallengeTests.swift; sourceTree = "<group>"; };
 		0190DCDD1EC1484200771506 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0190DCE21EC1484200771506 /* AutoScout24 Tech_ChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AutoScout24 Tech_ChallengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0190DCE61EC1484200771506 /* AutoScout24_Tech_ChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoScout24_Tech_ChallengeUITests.swift; sourceTree = "<group>"; };
@@ -67,6 +66,7 @@
 		0190DCF61EC16D9100771506 /* CarsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarsListViewController.swift; sourceTree = "<group>"; };
 		019130241EC2B0AF0015E4BE /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		019130271EC2CAAF0015E4BE /* Observer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
+		01BFF9361EC3B871002DE8BB /* AutoScout24Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoScout24Tests.swift; sourceTree = "<group>"; };
 		01DA0F1F1EC174910086BD7C /* FavoriteCarsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteCarsViewController.swift; sourceTree = "<group>"; };
 		01DA0F211EC1757E0086BD7C /* ApplicationTabbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationTabbar.swift; sourceTree = "<group>"; };
 		01DA0F3C1EC1EA550086BD7C /* FavoriteCarsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteCarsViewModel.swift; sourceTree = "<group>"; };
@@ -160,8 +160,8 @@
 		0190DCDA1EC1484200771506 /* AutoScout24 Tech_ChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
-				0190DCDB1EC1484200771506 /* AutoScout24_Tech_ChallengeTests.swift */,
-				0190DCDD1EC1484200771506 /* Info.plist */,
+				01BFF9381EC3B875002DE8BB /* Cases */,
+				01BFF9391EC3B87E002DE8BB /* Supporting Files */,
 			);
 			path = "AutoScout24 Tech_ChallengeTests";
 			sourceTree = "<group>";
@@ -236,6 +236,22 @@
 				0190DCCF1EC1484200771506 /* LaunchScreen.storyboard */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		01BFF9381EC3B875002DE8BB /* Cases */ = {
+			isa = PBXGroup;
+			children = (
+				01BFF9361EC3B871002DE8BB /* AutoScout24Tests.swift */,
+			);
+			name = Cases;
+			sourceTree = "<group>";
+		};
+		01BFF9391EC3B87E002DE8BB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0190DCDD1EC1484200771506 /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		02AD98BCA93B83DF368CC4A8 /* Pods */ = {
@@ -344,6 +360,7 @@
 					0190DCD61EC1484200771506 = {
 						CreatedOnToolsVersion = 8.3;
 						DevelopmentTeam = LG4XB4J5E3;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 0190DCBF1EC1484100771506;
 					};
@@ -564,7 +581,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0190DCDC1EC1484200771506 /* AutoScout24_Tech_ChallengeTests.swift in Sources */,
+				01BFF9371EC3B871002DE8BB /* AutoScout24Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -713,6 +730,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = LG4XB4J5E3;
 				INFOPLIST_FILE = "AutoScout24 Tech_Challenge/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ahmad.atef.AutoScout24-Tech-Challenge";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -727,6 +745,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = LG4XB4J5E3;
 				INFOPLIST_FILE = "AutoScout24 Tech_Challenge/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ahmad.atef.AutoScout24-Tech-Challenge";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -740,11 +759,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = LG4XB4J5E3;
 				INFOPLIST_FILE = "AutoScout24 Tech_ChallengeTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ahmad.atef.AutoScout24-Tech-ChallengeTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AutoScout24 Tech_Challenge.app/AutoScout24 Tech_Challenge";
 			};
@@ -756,6 +777,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = LG4XB4J5E3;
 				INFOPLIST_FILE = "AutoScout24 Tech_ChallengeTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
