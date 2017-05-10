@@ -34,6 +34,7 @@ class CarsListViewController: UIViewController {
         refreshControl.beginRefreshing()
         CarsListViewController.carViewModel?.loadCars()
     }
+    
 }
 
 //MARK: - TableView Delegates -
@@ -55,10 +56,18 @@ extension CarsListViewController : UITableViewDelegate, UITableViewDataSource{
                 cell.price.text = "\(car.price) $"
                 cell.isFavorited.isOn = car.isFavorited
                 cell.car = car
+                if let imagesURL = car.images as? [String]{
+                    if let firstImageURL = imagesURL.first{
+                        cell.carImage.imageFromServerURL(urlString: firstImageURL)
+                    }
+                }
             }
             return cell
         }
         return UITableViewCell()
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
 
@@ -82,6 +91,7 @@ class CarCell: UITableViewCell {
     @IBOutlet weak var manufacturer: UILabel!
     @IBOutlet weak var price: UILabel!
     @IBOutlet weak var isFavorited: UISwitch!
+    @IBOutlet weak var carImage: UIImageView!
     @IBAction func favoriteIsTapped(_ sender: Any) {
         car?.isFavorited = isFavorited.isOn
         CarsListViewController.carViewModel?.updateCar(car: car!)

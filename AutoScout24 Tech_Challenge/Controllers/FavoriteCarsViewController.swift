@@ -26,6 +26,7 @@ class FavoriteCarsViewController: UIViewController {
         FavoriteCarsViewController.carViewModel = FavoriteCarsViewModel(viewable: self)
         FavoriteCarsViewController.carViewModel?.registerForNotification()
         listCars()
+        manageEmptyView()
     }
     
     func addPullToRefresh() {
@@ -39,7 +40,9 @@ class FavoriteCarsViewController: UIViewController {
     }
     
     func manageEmptyView() {
-        emptyView.isHidden = FavoriteCarsViewController.carViewModel!.numberOfItems() > 0
+        UIView.animate(withDuration: 0.4) {
+            self.emptyView.alpha = (FavoriteCarsViewController.carViewModel!.numberOfItems() > 0) ? 0 : 1
+        }
     }
 }
 
@@ -65,6 +68,9 @@ extension FavoriteCarsViewController : UITableViewDelegate, UITableViewDataSourc
             return cell
         }
         return UITableViewCell()
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
 
