@@ -31,7 +31,7 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="598"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CarCell" rowHeight="100" id="sEr-lK-uMY" customClass="CarCell" customModule="AutoScout24_Tech_Challenge" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="FavoriteCarCell" rowHeight="100" id="sEr-lK-uMY" customClass="FavoriteCarCell" customModule="AutoScout24_Tech_Challenge" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sEr-lK-uMY" id="cAg-UG-bJ4">
@@ -39,13 +39,13 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mercedes-Benz" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NSp-AX-KqC">
-                                                    <rect key="frame" x="8" y="8" width="122" height="24"/>
+                                                    <rect key="frame" x="8" y="8" width="122" height="23.5"/>
                                                     <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="31944 Km" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1E5-Ae-J64">
-                                                    <rect key="frame" x="8" y="40" width="120" height="24"/>
+                                                    <rect key="frame" x="8" y="39.5" width="120" height="23.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="120" id="dwl-L9-Fx8"/>
                                                     </constraints>
@@ -54,7 +54,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4659 $" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pr8-Cm-sO9">
-                                                    <rect key="frame" x="247" y="9" width="120" height="24"/>
+                                                    <rect key="frame" x="247" y="9" width="120" height="23.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="120" id="9yk-H5-HsR"/>
                                                     </constraints>
@@ -62,26 +62,35 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="9oX-pX-bnZ">
-                                                    <rect key="frame" x="318" y="60" width="51" height="31"/>
-                                                    <connections>
-                                                        <action selector="unFavoriteIsTapped:" destination="sEr-lK-uMY" eventType="valueChanged" id="X1M-nN-BCa"/>
-                                                    </connections>
-                                                </switch>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Benzin" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="enu-CI-HcX">
-                                                    <rect key="frame" x="8" y="72" width="120" height="24"/>
+                                                    <rect key="frame" x="8" y="71" width="120" height="23.5"/>
                                                     <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V6K-bk-cdd">
+                                                    <rect key="frame" x="287" y="55" width="80" height="36"/>
+                                                    <color key="backgroundColor" red="0.90588235289999997" green="0.29803921570000003" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="80" id="3Be-Oq-XUk"/>
+                                                        <constraint firstAttribute="height" constant="36" id="qnI-fj-tqr"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="17"/>
+                                                    <state key="normal" title="Remove">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="unFavoriteIsTapped:" destination="sEr-lK-uMY" eventType="touchUpInside" id="Wh3-c8-zWo"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="9oX-pX-bnZ" firstAttribute="top" secondItem="pr8-Cm-sO9" secondAttribute="bottom" constant="27" id="0ER-uF-VNd"/>
+                                                <constraint firstAttribute="trailing" secondItem="V6K-bk-cdd" secondAttribute="trailing" constant="8" id="K97-WP-KBN"/>
                                                 <constraint firstItem="1E5-Ae-J64" firstAttribute="leading" secondItem="enu-CI-HcX" secondAttribute="leading" id="OR8-wq-iHP"/>
                                                 <constraint firstItem="NSp-AX-KqC" firstAttribute="leading" secondItem="cAg-UG-bJ4" secondAttribute="leadingMargin" id="Sbp-MA-4XC"/>
                                                 <constraint firstItem="pr8-Cm-sO9" firstAttribute="trailing" secondItem="cAg-UG-bJ4" secondAttribute="trailingMargin" id="VR7-VP-K2A"/>
                                                 <constraint firstItem="1E5-Ae-J64" firstAttribute="top" secondItem="NSp-AX-KqC" secondAttribute="bottom" constant="8" symbolic="YES" id="Vv6-FB-auQ"/>
-                                                <constraint firstItem="pr8-Cm-sO9" firstAttribute="trailing" secondItem="9oX-pX-bnZ" secondAttribute="trailing" id="aSD-kf-FYf"/>
+                                                <constraint firstAttribute="bottom" secondItem="V6K-bk-cdd" secondAttribute="bottom" constant="8.5" id="cFq-bv-Qop"/>
                                                 <constraint firstItem="NSp-AX-KqC" firstAttribute="leading" secondItem="1E5-Ae-J64" secondAttribute="leading" id="ggM-wB-B4Y"/>
                                                 <constraint firstItem="pr8-Cm-sO9" firstAttribute="top" secondItem="cAg-UG-bJ4" secondAttribute="topMargin" constant="1" id="oE9-r1-FZx"/>
                                                 <constraint firstItem="enu-CI-HcX" firstAttribute="top" secondItem="1E5-Ae-J64" secondAttribute="bottom" constant="8" symbolic="YES" id="tHd-Pi-eNl"/>
@@ -90,7 +99,6 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="isFavorited" destination="9oX-pX-bnZ" id="uTd-mt-9aq"/>
                                             <outlet property="manufacturer" destination="NSp-AX-KqC" id="00O-bF-8dd"/>
                                             <outlet property="milage" destination="1E5-Ae-J64" id="P52-gX-4bz"/>
                                             <outlet property="price" destination="pr8-Cm-sO9" id="iTb-df-miC"/>
@@ -102,17 +110,43 @@
                                     <outlet property="delegate" destination="iWL-Yc-ZSJ" id="8yL-LC-Xj0"/>
                                 </connections>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yiq-6I-4DP">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Favorite Cars." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bw3-p6-ojS">
+                                        <rect key="frame" x="119.5" y="297" width="136" height="24"/>
+                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="17"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="no_car" translatesAutoresizingMaskIntoConstraints="NO" id="XIH-MS-BEV">
+                                        <rect key="frame" x="124" y="161" width="128" height="128"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="bw3-p6-ojS" firstAttribute="centerX" secondItem="Yiq-6I-4DP" secondAttribute="centerX" id="G0b-A5-Ieb"/>
+                                    <constraint firstItem="bw3-p6-ojS" firstAttribute="centerY" secondItem="Yiq-6I-4DP" secondAttribute="centerY" id="bo5-db-FVh"/>
+                                    <constraint firstItem="bw3-p6-ojS" firstAttribute="top" secondItem="XIH-MS-BEV" secondAttribute="bottom" constant="8" id="hzx-yq-MBX"/>
+                                    <constraint firstItem="XIH-MS-BEV" firstAttribute="centerX" secondItem="Yiq-6I-4DP" secondAttribute="centerX" id="xnj-7f-r0Y"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="5tg-ZW-KxX" firstAttribute="top" secondItem="Yiq-6I-4DP" secondAttribute="bottom" id="0xh-sk-BwA"/>
+                            <constraint firstItem="Yiq-6I-4DP" firstAttribute="top" secondItem="1gB-FL-aXv" secondAttribute="top" id="IIK-EW-ss8"/>
                             <constraint firstItem="5tg-ZW-KxX" firstAttribute="top" secondItem="Pda-Fu-Chh" secondAttribute="bottom" id="KMV-nG-sUC"/>
                             <constraint firstItem="Pda-Fu-Chh" firstAttribute="leading" secondItem="1gB-FL-aXv" secondAttribute="leading" id="Zu0-6U-CyJ"/>
+                            <constraint firstAttribute="trailing" secondItem="Yiq-6I-4DP" secondAttribute="trailing" id="gVs-kj-DsV"/>
+                            <constraint firstItem="Yiq-6I-4DP" firstAttribute="leading" secondItem="1gB-FL-aXv" secondAttribute="leading" id="r99-4E-2pZ"/>
                             <constraint firstItem="Pda-Fu-Chh" firstAttribute="top" secondItem="7w5-Kc-jLj" secondAttribute="bottom" id="sF7-1G-IBc"/>
                             <constraint firstAttribute="trailing" secondItem="Pda-Fu-Chh" secondAttribute="trailing" id="uY3-3G-uIM"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Favorite" image="favorite_cars" id="vi3-SI-0gy"/>
                     <connections>
+                        <outlet property="emptyView" destination="Yiq-6I-4DP" id="I9X-N0-FYY"/>
                         <outlet property="tableView" destination="Pda-Fu-Chh" id="Nmg-Ka-YHN"/>
                     </connections>
                 </viewController>
@@ -144,13 +178,13 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mercedes-Benz" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qcs-8d-NCg">
-                                                    <rect key="frame" x="8" y="8" width="122" height="23.5"/>
+                                                    <rect key="frame" x="8" y="8" width="120.5" height="20"/>
                                                     <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="31944 Km" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tC9-O5-bcR">
-                                                    <rect key="frame" x="8" y="39.5" width="120" height="23.5"/>
+                                                    <rect key="frame" x="8" y="36" width="120" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="120" id="jOo-IM-QrE"/>
                                                     </constraints>
@@ -159,7 +193,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4659 $" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IGA-a6-iza">
-                                                    <rect key="frame" x="247" y="8" width="120" height="23.5"/>
+                                                    <rect key="frame" x="247" y="8" width="120" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="120" id="wjI-SH-Qxf"/>
                                                     </constraints>
@@ -168,13 +202,13 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="U6g-xR-et9">
-                                                    <rect key="frame" x="318" y="59.5" width="51" height="31"/>
+                                                    <rect key="frame" x="318" y="56" width="51" height="31"/>
                                                     <connections>
                                                         <action selector="favoriteIsTapped:" destination="u7N-eu-bRO" eventType="valueChanged" id="0gR-W8-fjn"/>
                                                     </connections>
                                                 </switch>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Benzin" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kei-63-tFT">
-                                                    <rect key="frame" x="8" y="64" width="54" height="23.5"/>
+                                                    <rect key="frame" x="8" y="57" width="52" height="20"/>
                                                     <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -249,5 +283,6 @@
     <resources>
         <image name="car_search" width="32" height="32"/>
         <image name="favorite_cars" width="32" height="32"/>
+        <image name="no_car" width="128" height="128"/>
     </resources>
 </document>

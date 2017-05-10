@@ -12,6 +12,7 @@ class FavoriteCarsViewController: UIViewController {
     
     //MARK: - IBOutlet -
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var emptyView: UIView!
     
     //MARK: - Properties -
     
@@ -36,6 +37,10 @@ class FavoriteCarsViewController: UIViewController {
         refreshControl.beginRefreshing()
         FavoriteCarsViewController.carViewModel?.loadCars()
     }
+    
+    func manageEmptyView() {
+        emptyView.isHidden = FavoriteCarsViewController.carViewModel!.numberOfItems() > 0
+    }
 }
 
 //MARK: - TableView Delegates -
@@ -50,12 +55,11 @@ extension FavoriteCarsViewController : UITableViewDelegate, UITableViewDataSourc
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        if let cell = tableView.dequeueReusableCell(withIdentifier: CarCell.Identifier) as? CarCell{
+        if let cell = tableView.dequeueReusableCell(withIdentifier: FavoriteCarCell.Identifier) as? FavoriteCarCell{
             if let car = FavoriteCarsViewController.carViewModel?.itemAtIndex(index: indexPath.row){
                 cell.milage.text = "\(car.mileage) Km"
                 cell.manufacturer.text = car.make!
                 cell.price.text = "\(car.price) $"
-                cell.isFavorited.isOn = car.isFavorited
                 cell.car = car
             }
             return cell
@@ -69,9 +73,24 @@ extension FavoriteCarsViewController: CarViewable {
     func reloadData() {
         self.refreshControl.endRefreshing()
         self.tableView.reloadData()
+        manageEmptyView()
     }
     func showError(error: String){
         
+    }
+}
+
+//MARK: - UI Favorite Car Cell -
+
+class FavoriteCarCell: UITableViewCell {
+    var car : Car?
+    static let Identifier = "FavoriteCarCell"
+    @IBOutlet weak var milage: UILabel!
+    @IBOutlet weak var manufacturer: UILabel!
+    @IBOutlet weak var price: UILabel!
+    @IBAction func unFavoriteIsTapped(_ sender: Any){
+        car?.isFavorited = false
+        FavoriteCarsViewController.carViewModel?.updateCar(car: car!)
     }
 }
 

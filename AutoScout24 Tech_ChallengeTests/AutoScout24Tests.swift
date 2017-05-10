@@ -19,7 +19,7 @@ class AutoScout24Tests: XCTestCase {
     
     
     func testCanAddCar() {
-        
+        // given
         let newCar : [String : Any] = ["ID" : 150,
                                        "FirstRegistration" : "7/2015",
                                        "AccidentFree" : true,
@@ -30,12 +30,17 @@ class AutoScout24Tests: XCTestCase {
                                        "Mileage" : 5678,
                                        "Make": "BMW",
                                        "FuelType": "Diesel"]
+        
+        // where
         let addedCar =  DBIntercotr.shared.addNewCar(dict: newCar as [String : AnyObject])
         let localCars = DBIntercotr.shared.loadLocalCars()
+        
+        // then
         XCTAssertTrue(localCars.contains(addedCar))
     }
     
     func testCanRemoveCar(){
+        // given
         let dict : [String : Any] = ["ID" : 150,
                                        "FirstRegistration" : "7/2015",
                                        "AccidentFree" : true,
@@ -46,9 +51,11 @@ class AutoScout24Tests: XCTestCase {
                                        "Mileage" : 5678,
                                        "Make": "BMW",
                                        "FuelType": "Diesel"]
+        // where
         let toBeRemovedCar = DBIntercotr.shared.removeCar(dict: dict as [String : AnyObject])
         let localCars = DBIntercotr.shared.loadLocalCars()
         
+        // then
         XCTAssertFalse(localCars.contains(toBeRemovedCar))
     }
     

@@ -86,9 +86,4 @@ class CarCell: UITableViewCell {
         car?.isFavorited = isFavorited.isOn
         CarsListViewController.carViewModel?.updateCar(car: car!)
     }
-    
-    @IBAction func unFavoriteIsTapped(_ sender: Any){
-        car?.isFavorited = isFavorited.isOn
-        FavoriteCarsViewController.carViewModel?.updateCar(car: car!)
-    }
 }
