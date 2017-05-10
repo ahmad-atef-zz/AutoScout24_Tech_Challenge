@@ -54,17 +54,17 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="u7N-eu-bRO" id="9yh-CI-5gc">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mercedes-Benz" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qcs-8d-NCg">
-                                                    <rect key="frame" x="8" y="8" width="122" height="24"/>
+                                                    <rect key="frame" x="8" y="8" width="120.5" height="20"/>
                                                     <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="31944 Km" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tC9-O5-bcR">
-                                                    <rect key="frame" x="8" y="40" width="120" height="24"/>
+                                                    <rect key="frame" x="8" y="36" width="120" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="120" id="jOo-IM-QrE"/>
                                                     </constraints>
@@ -73,7 +73,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4659 $" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IGA-a6-iza">
-                                                    <rect key="frame" x="247" y="8" width="120" height="24"/>
+                                                    <rect key="frame" x="247" y="8" width="120" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="120" id="wjI-SH-Qxf"/>
                                                     </constraints>
@@ -82,10 +82,13 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="U6g-xR-et9">
-                                                    <rect key="frame" x="318" y="60" width="51" height="31"/>
+                                                    <rect key="frame" x="318" y="56" width="51" height="31"/>
+                                                    <connections>
+                                                        <action selector="favoriteIsTapped:" destination="u7N-eu-bRO" eventType="valueChanged" id="0gR-W8-fjn"/>
+                                                    </connections>
                                                 </switch>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Benzin" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kei-63-tFT">
-                                                    <rect key="frame" x="8" y="72" width="54" height="24"/>
+                                                    <rect key="frame" x="8" y="64" width="52" height="20"/>
                                                     <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>

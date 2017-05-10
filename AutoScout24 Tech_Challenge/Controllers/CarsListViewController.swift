@@ -16,12 +16,12 @@ class CarsListViewController: UIViewController {
     //MARK: - Properties -
     var dataSource : [String] = []
     var refreshControl = UIRefreshControl()
-    var carViewModel : CarListViewModel?
+    static var carViewModel : CarListViewModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         addPullToRefresh()
-        carViewModel = CarListViewModel(viewable: self)
+        CarsListViewController.carViewModel = CarListViewModel(viewable: self)
         listCars()
     }
 
@@ -32,7 +32,7 @@ class CarsListViewController: UIViewController {
     
     func listCars() {
         refreshControl.beginRefreshing()
-        carViewModel?.loadCars()
+        CarsListViewController.carViewModel?.loadCars()
     }
 }
 
@@ -43,17 +43,18 @@ extension CarsListViewController : UITableViewDelegate, UITableViewDataSource{
         return 1
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return carViewModel!.numberOfItems()
+        return CarsListViewController.carViewModel!.numberOfItems()
         
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         if let cell = tableView.dequeueReusableCell(withIdentifier: CarCell.Identifier) as? CarCell{
-            if let car = carViewModel?.itemAtIndex(index: indexPath.row){
+            if let car = CarsListViewController.carViewModel?.itemAtIndex(index: indexPath.row){
                 cell.milage.text = "\(car.mileage) Km"
                 cell.manufacturer.text = car.make!
                 cell.price.text = "\(car.price) $"
                 cell.isFavorited.isOn = car.isFavorited
+                cell.car = car
             }
             return cell
         }
@@ -73,12 +74,16 @@ extension CarsListViewController: CarViewable {
 }
 
 
-
 //MARK: - UI Car Cell -
 class CarCell: UITableViewCell {
+    var car : Car?
     static let Identifier = "CarCell"
     @IBOutlet weak var milage: UILabel!
     @IBOutlet weak var manufacturer: UILabel!
     @IBOutlet weak var price: UILabel!
     @IBOutlet weak var isFavorited: UISwitch!
+    @IBAction func favoriteIsTapped(_ sender: Any) {
+        car?.isFavorited = isFavorited.isOn
+        CarsListViewController.carViewModel?.updateCar(car: car!)
+    }
 }

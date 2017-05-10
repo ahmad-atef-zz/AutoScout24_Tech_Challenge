@@ -21,24 +21,27 @@ enum CarKey: String {
     make = "Make",
     fuelType = "FuelType",
     images = "Images",
-    responseKey = "vehicles"
+    responseKey = "vehicles",
+    isFavorited = "isFavorited"
 }
 
-class DBIntercotr {
+class DBIntercotr : SubjectBase{
     static let shared = DBIntercotr()
+    
+    override init() {
+        super.init()
+        addObserver(observers: CarsListViewController.carViewModel!)
+    }
     
     let context = CONTEXT
     
     func loadLocalCars() -> [Car] {
         var localCars : [Car] = []
-        
         do{
             localCars = try context.fetch(Car.fetchRequest())
         }
         catch{
-            
         }
-        
         return localCars
     }
     
@@ -64,6 +67,15 @@ class DBIntercotr {
                         onFail(error.localizedDescription)
                     }
                 }
+        }
+    }
+    
+    func updateCar(car : Car) {
+        let localCars = loadLocalCars()
+        if let fitchedCar = localCars.filter({$0.id == car.id}).first{
+            fitchedCar.isFavorited = car.isFavorited
+            saveContext()
+            sendNotification(updatedCar: car)
         }
     }
     
