@@ -43,7 +43,7 @@ class FavoriteCarsViewModel : CarDataSourceProtcol{
     }
     
     func removeCar(car: Car) {
-        DBIntercotr.shared.removeCar(car: Car)
+        DBIntercotr.shared.removeCar(car: car)
     }
     
 }

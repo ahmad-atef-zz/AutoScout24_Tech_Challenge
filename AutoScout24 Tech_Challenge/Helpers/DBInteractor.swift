@@ -156,7 +156,7 @@ class DBIntercotr : SubjectBase, CloudNetworkService{
         return toBeRemovedCar
     }
     
-    func removeCar(car: Car) -> Car {
+    func removeCar(car: Car) {
         let localCars = loadLocalCars()
         if let toBeRemovedCar = localCars.filter({$0.id == car.id}).first{
             context.delete(toBeRemovedCar)
