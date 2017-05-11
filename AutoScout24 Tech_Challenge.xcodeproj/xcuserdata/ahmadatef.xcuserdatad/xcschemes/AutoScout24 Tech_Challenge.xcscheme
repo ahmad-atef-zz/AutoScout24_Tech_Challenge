@@ -48,6 +48,16 @@
                ReferencedContainer = "container:AutoScout24 Tech_Challenge.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "01BFF9431EC3E457002DE8BB"
+               BuildableName = "AutoScout24IntegrationTests.xctest"
+               BlueprintName = "AutoScout24IntegrationTests"
+               ReferencedContainer = "container:AutoScout24 Tech_Challenge.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>ID</key>
+		<integer>111</integer>
+		<key>FirstRegistration</key>
+		<string>7/2013</string>
+		<key>AccidentFree</key>
+		<false/>
+		<key>PowerKW</key>
+		<integer>123</integer>
+		<key>Address</key>
+		<string>50667 Köln</string>
+		<key>Price</key>
+		<integer>1212</integer>
+		<key>Mileage</key>
+		<integer>31944</integer>
+		<key>Make</key>
+		<string>BMW</string>
+		<key>FuelType</key>
+		<string>Diesel</string>
+	</dict>
+	<dict>
+		<key>ID</key>
+		<integer>111</integer>
+		<key>FirstRegistration</key>
+		<string>7/2013</string>
+		<key>AccidentFree</key>
+		<false/>
+		<key>PowerKW</key>
+		<integer>123</integer>
+		<key>Address</key>
+		<string>50667 Köln</string>
+		<key>Price</key>
+		<integer>1212</integer>
+		<key>Mileage</key>
+		<integer>31944</integer>
+		<key>Make</key>
+		<string>BMW</string>
+		<key>FuelType</key>
+		<string>Diesel</string>
+	</dict>
+	<dict>
+		<key>ID</key>
+		<integer>111</integer>
+		<key>FirstRegistration</key>
+		<string>7/2013</string>
+		<key>AccidentFree</key>
+		<false/>
+		<key>PowerKW</key>
+		<integer>123</integer>
+		<key>Address</key>
+		<string>50667 Köln</string>
+		<key>Price</key>
+		<integer>1212</integer>
+		<key>Mileage</key>
+		<integer>31944</integer>
+		<key>Make</key>
+		<string>BMW</string>
+		<key>FuelType</key>
+		<string>Diesel</string>
+	</dict>
+</array>
+</plist>

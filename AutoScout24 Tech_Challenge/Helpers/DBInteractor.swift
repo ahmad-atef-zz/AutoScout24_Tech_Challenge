@@ -29,7 +29,11 @@ enum CarKey: String {
     isFavorited = "isFavorited"
 }
 
-class DBIntercotr : SubjectBase{
+public protocol CloudNetworkService {
+    func loadRemoteCars(manufacturer : String, onSuccess:@escaping ([Car]) -> Void, onFail: @escaping (String) -> Void)
+}
+
+class DBIntercotr : SubjectBase, CloudNetworkService{
     static let shared = DBIntercotr()
     
     override init() {
@@ -152,6 +156,13 @@ class DBIntercotr : SubjectBase{
         return toBeRemovedCar
     }
     
+    func removeCar(car: Car) -> Car {
+        let localCars = loadLocalCars()
+        if let toBeRemovedCar = localCars.filter({$0.id == car.id}).first{
+            context.delete(toBeRemovedCar)
+            saveContext()
+        }
+    }
     
     /// Update Car If found with the new properties.
     ///
@@ -199,8 +210,28 @@ class DBIntercotr : SubjectBase{
         }
         return result
     }
+}
 
+extension DBIntercotr{
     
+    func simulateSuccessInLoadingCar(completion: ((Bool) -> ())?) {
+        loadCarWithSuccess { (result) in
+            completion!(result)
+        }
+    }
+    
+    func loadCarWithSuccess(completion: ((Bool) -> ())?) {
+        completion!(true)
+    }
+    
+    func simulateFailInLoadingCar(completion: ((Bool) -> ())?) {
+        loadCarWithFail { (result) in
+            completion!(result)
+        }
+    }
+    func loadCarWithFail(completion: ((Bool) -> ())?) {
+        completion!(false)
+    }
 }
 
 

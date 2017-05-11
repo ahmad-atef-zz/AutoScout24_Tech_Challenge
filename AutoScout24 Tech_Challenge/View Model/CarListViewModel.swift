@@ -10,13 +10,19 @@ import Foundation
 
 
 
-protocol CarDataSourceProtcol {
+/// Protocol for all CarDataSourcable, the consumer of this protocol is someone who is interested in implementing the data source protocol related to Cars.
+
+@objc protocol CarDataSourceProtcol {
     func loadCars()
     func numberOfItems() -> Int
     func itemAtIndex (index : Int) -> Car
     func updateCar(car: Car)
     func registerForNotification()
+    @objc optional func removeCar(car: Car)
 }
+
+
+/// Protcol for all CarViewable, the consumers are someone who is intersted in implmenting the Car Viewing functions, like reloading data or Showing Errors.
 
 protocol CarViewable {
     func reloadData()
@@ -45,6 +51,9 @@ class CarListViewModel : CarDataSourceProtcol{
             self.carViewConsumer.reloadData()
         }) { (error) in
             print(error)
+            UIDecorator.shared.showMessage(title: "Error",
+                                           body: error.description,
+                                           alertType: .error)
         }
     }
     

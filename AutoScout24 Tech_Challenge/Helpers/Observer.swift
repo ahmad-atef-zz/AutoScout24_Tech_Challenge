@@ -9,12 +9,17 @@
 import Foundation
 
 
+
+/// Subject is Responisnle for [ Notification & Managing Observers ].
+
 protocol Subject {
     func addObserver(observers : Observer...)
     func removeObserver(observer : Observer)
     func sendNotification(updatedCar: Car)
 }
 
+
+/// For All Observers that are waiting to get Notified when a change from Subject has been Changed
 protocol Observer : class {
     func didRecieveNotification(updatedCar: Car)
 }

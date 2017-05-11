@@ -23,6 +23,10 @@
 		01BFF93B1EC3CF8D002DE8BB /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BFF93A1EC3CF8D002DE8BB /* extensions.swift */; };
 		01BFF93D1EC3DE31002DE8BB /* InternetChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BFF93C1EC3DE31002DE8BB /* InternetChecker.swift */; };
 		01BFF93F1EC3DFC0002DE8BB /* UIDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BFF93E1EC3DFC0002DE8BB /* UIDecorator.swift */; };
+		01BFF9521EC3E49D002DE8BB /* AutoScout24IntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BFF9511EC3E49D002DE8BB /* AutoScout24IntegrationTests.swift */; };
+		01BFF9561EC3E652002DE8BB /* MockCloudNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BFF9551EC3E652002DE8BB /* MockCloudNetworkService.swift */; };
+		01BFF9591EC3EA10002DE8BB /* testing_cars.plist in Resources */ = {isa = PBXBuildFile; fileRef = 01BFF9581EC3EA10002DE8BB /* testing_cars.plist */; };
+		01BFF95A1EC3EA10002DE8BB /* testing_cars.plist in Resources */ = {isa = PBXBuildFile; fileRef = 01BFF9581EC3EA10002DE8BB /* testing_cars.plist */; };
 		01DA0F201EC174910086BD7C /* FavoriteCarsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DA0F1F1EC174910086BD7C /* FavoriteCarsViewController.swift */; };
 		01DA0F221EC1757E0086BD7C /* ApplicationTabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DA0F211EC1757E0086BD7C /* ApplicationTabbar.swift */; };
 		01DA0F3D1EC1EA550086BD7C /* FavoriteCarsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DA0F3C1EC1EA550086BD7C /* FavoriteCarsViewModel.swift */; };
@@ -41,6 +45,13 @@
 			remoteInfo = "AutoScout24 Tech_Challenge";
 		};
 		0190DCE31EC1484200771506 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0190DCB81EC1484100771506 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0190DCBF1EC1484100771506;
+			remoteInfo = "AutoScout24 Tech_Challenge";
+		};
+		01BFF9491EC3E457002DE8BB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0190DCB81EC1484100771506 /* Project object */;
 			proxyType = 1;
@@ -73,6 +84,11 @@
 		01BFF93A1EC3CF8D002DE8BB /* extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
 		01BFF93C1EC3DE31002DE8BB /* InternetChecker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InternetChecker.swift; sourceTree = "<group>"; };
 		01BFF93E1EC3DFC0002DE8BB /* UIDecorator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDecorator.swift; sourceTree = "<group>"; };
+		01BFF9441EC3E457002DE8BB /* AutoScout24IntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoScout24IntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		01BFF9481EC3E457002DE8BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01BFF9511EC3E49D002DE8BB /* AutoScout24IntegrationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoScout24IntegrationTests.swift; sourceTree = "<group>"; };
+		01BFF9551EC3E652002DE8BB /* MockCloudNetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockCloudNetworkService.swift; sourceTree = "<group>"; };
+		01BFF9581EC3EA10002DE8BB /* testing_cars.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = testing_cars.plist; sourceTree = "<group>"; };
 		01DA0F1F1EC174910086BD7C /* FavoriteCarsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteCarsViewController.swift; sourceTree = "<group>"; };
 		01DA0F211EC1757E0086BD7C /* ApplicationTabbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationTabbar.swift; sourceTree = "<group>"; };
 		01DA0F3C1EC1EA550086BD7C /* FavoriteCarsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteCarsViewModel.swift; sourceTree = "<group>"; };
@@ -113,6 +129,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		01BFF9411EC3E457002DE8BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -130,6 +153,7 @@
 				0190DCC21EC1484200771506 /* AutoScout24 Tech_Challenge */,
 				0190DCDA1EC1484200771506 /* AutoScout24 Tech_ChallengeTests */,
 				0190DCE51EC1484200771506 /* AutoScout24 Tech_ChallengeUITests */,
+				01BFF9451EC3E457002DE8BB /* AutoScout24IntegrationTests */,
 				0190DCC11EC1484200771506 /* Products */,
 				02AD98BCA93B83DF368CC4A8 /* Pods */,
 				8034E26ED4CA42F44198A6AB /* Frameworks */,
@@ -142,6 +166,7 @@
 				0190DCC01EC1484200771506 /* AutoScout24 Tech_Challenge.app */,
 				0190DCD71EC1484200771506 /* AutoScout24 Tech_ChallengeTests.xctest */,
 				0190DCE21EC1484200771506 /* AutoScout24 Tech_ChallengeUITests.xctest */,
+				01BFF9441EC3E457002DE8BB /* AutoScout24IntegrationTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -167,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				01BFF9381EC3B875002DE8BB /* Cases */,
+				01BFF9571EC3E9F7002DE8BB /* Data */,
 				01BFF9391EC3B87E002DE8BB /* Supporting Files */,
 			);
 			path = "AutoScout24 Tech_ChallengeTests";
@@ -263,6 +289,48 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		01BFF9451EC3E457002DE8BB /* AutoScout24IntegrationTests */ = {
+			isa = PBXGroup;
+			children = (
+				01BFF94E1EC3E46D002DE8BB /* Cases */,
+				01BFF9501EC3E482002DE8BB /* Mocks */,
+				01BFF94F1EC3E473002DE8BB /* Supporting File */,
+			);
+			path = AutoScout24IntegrationTests;
+			sourceTree = "<group>";
+		};
+		01BFF94E1EC3E46D002DE8BB /* Cases */ = {
+			isa = PBXGroup;
+			children = (
+				01BFF9511EC3E49D002DE8BB /* AutoScout24IntegrationTests.swift */,
+			);
+			name = Cases;
+			sourceTree = "<group>";
+		};
+		01BFF94F1EC3E473002DE8BB /* Supporting File */ = {
+			isa = PBXGroup;
+			children = (
+				01BFF9481EC3E457002DE8BB /* Info.plist */,
+			);
+			name = "Supporting File";
+			sourceTree = "<group>";
+		};
+		01BFF9501EC3E482002DE8BB /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				01BFF9551EC3E652002DE8BB /* MockCloudNetworkService.swift */,
+			);
+			name = Mocks;
+			sourceTree = "<group>";
+		};
+		01BFF9571EC3E9F7002DE8BB /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				01BFF9581EC3EA10002DE8BB /* testing_cars.plist */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
 		02AD98BCA93B83DF368CC4A8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -351,6 +419,24 @@
 			productReference = 0190DCE21EC1484200771506 /* AutoScout24 Tech_ChallengeUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		01BFF9431EC3E457002DE8BB /* AutoScout24IntegrationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01BFF94B1EC3E457002DE8BB /* Build configuration list for PBXNativeTarget "AutoScout24IntegrationTests" */;
+			buildPhases = (
+				01BFF9401EC3E457002DE8BB /* Sources */,
+				01BFF9411EC3E457002DE8BB /* Frameworks */,
+				01BFF9421EC3E457002DE8BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				01BFF94A1EC3E457002DE8BB /* PBXTargetDependency */,
+			);
+			name = AutoScout24IntegrationTests;
+			productName = AutoScout24IntegrationTests;
+			productReference = 01BFF9441EC3E457002DE8BB /* AutoScout24IntegrationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -379,6 +465,13 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 0190DCBF1EC1484100771506;
 					};
+					01BFF9431EC3E457002DE8BB = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = LG4XB4J5E3;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0190DCBF1EC1484100771506;
+					};
 				};
 			};
 			buildConfigurationList = 0190DCBB1EC1484100771506 /* Build configuration list for PBXProject "AutoScout24 Tech_Challenge" */;
@@ -397,6 +490,7 @@
 				0190DCBF1EC1484100771506 /* AutoScout24 Tech_Challenge */,
 				0190DCD61EC1484200771506 /* AutoScout24 Tech_ChallengeTests */,
 				0190DCE11EC1484200771506 /* AutoScout24 Tech_ChallengeUITests */,
+				01BFF9431EC3E457002DE8BB /* AutoScout24IntegrationTests */,
 			);
 		};
 /* End PBXProject section */
@@ -417,6 +511,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01BFF9591EC3EA10002DE8BB /* testing_cars.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +519,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01BFF9421EC3E457002DE8BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01BFF95A1EC3EA10002DE8BB /* testing_cars.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -605,6 +708,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		01BFF9401EC3E457002DE8BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01BFF9561EC3E652002DE8BB /* MockCloudNetworkService.swift in Sources */,
+				01BFF9521EC3E49D002DE8BB /* AutoScout24IntegrationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -617,6 +729,11 @@
 			isa = PBXTargetDependency;
 			target = 0190DCBF1EC1484100771506 /* AutoScout24 Tech_Challenge */;
 			targetProxy = 0190DCE31EC1484200771506 /* PBXContainerItemProxy */;
+		};
+		01BFF94A1EC3E457002DE8BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0190DCBF1EC1484100771506 /* AutoScout24 Tech_Challenge */;
+			targetProxy = 01BFF9491EC3E457002DE8BB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -830,6 +947,37 @@
 			};
 			name = Release;
 		};
+		01BFF94C1EC3E457002DE8BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = LG4XB4J5E3;
+				INFOPLIST_FILE = AutoScout24IntegrationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ahmad.atef.AutoScout24IntegrationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AutoScout24 Tech_Challenge.app/AutoScout24 Tech_Challenge";
+			};
+			name = Debug;
+		};
+		01BFF94D1EC3E457002DE8BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = LG4XB4J5E3;
+				INFOPLIST_FILE = AutoScout24IntegrationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ahmad.atef.AutoScout24IntegrationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AutoScout24 Tech_Challenge.app/AutoScout24 Tech_Challenge";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -868,6 +1016,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		01BFF94B1EC3E457002DE8BB /* Build configuration list for PBXNativeTarget "AutoScout24IntegrationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01BFF94C1EC3E457002DE8BB /* Debug */,
+				01BFF94D1EC3E457002DE8BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 

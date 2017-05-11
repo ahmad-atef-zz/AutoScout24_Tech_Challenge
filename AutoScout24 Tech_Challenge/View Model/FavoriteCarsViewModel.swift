@@ -42,6 +42,10 @@ class FavoriteCarsViewModel : CarDataSourceProtcol{
         DBIntercotr.shared.updateCar(car: car)
     }
     
+    func removeCar(car: Car) {
+        DBIntercotr.shared.removeCar(car: Car)
+    }
+    
 }
 
 extension FavoriteCarsViewModel : Observer{
