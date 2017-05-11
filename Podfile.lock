@@ -1,12 +1,18 @@
 PODS:
   - Alamofire (4.4.0)
+  - ReachabilitySwift (3)
+  - SwiftMessages (3.3.3)
 
 DEPENDENCIES:
   - Alamofire (~> 4.4)
+  - ReachabilitySwift (~> 3)
+  - SwiftMessages (~> 3.3)
 
 SPEC CHECKSUMS:
   Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  ReachabilitySwift: f5b9bb30a0777fac8f09ce8b067e32faeb29bb64
+  SwiftMessages: 09cea3336e3fb63c3578983c8aac65acaa6d884a
 
-PODFILE CHECKSUM: c0a9b9fcd730870e244f19a3e61990c72e9d1314
+PODFILE CHECKSUM: 2efeb9755565f9aea259f037ad7865a49f148289
 
 COCOAPODS: 1.1.0.rc.2

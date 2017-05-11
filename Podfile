@@ -7,6 +7,8 @@ target 'AutoScout24 Tech_Challenge' do
 
   # Pods for AutoScout24 Tech_Challenge
   pod 'Alamofire', '~> 4.4'
+  pod 'ReachabilitySwift', '~> 3'
+  pod 'SwiftMessages', '~> 3.3'
   
   target 'AutoScout24 Tech_ChallengeTests' do
     inherit! :search_paths

@@ -21,6 +21,8 @@
 		019130281EC2CAAF0015E4BE /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019130271EC2CAAF0015E4BE /* Observer.swift */; };
 		01BFF9371EC3B871002DE8BB /* AutoScout24Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BFF9361EC3B871002DE8BB /* AutoScout24Tests.swift */; };
 		01BFF93B1EC3CF8D002DE8BB /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BFF93A1EC3CF8D002DE8BB /* extensions.swift */; };
+		01BFF93D1EC3DE31002DE8BB /* InternetChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BFF93C1EC3DE31002DE8BB /* InternetChecker.swift */; };
+		01BFF93F1EC3DFC0002DE8BB /* UIDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BFF93E1EC3DFC0002DE8BB /* UIDecorator.swift */; };
 		01DA0F201EC174910086BD7C /* FavoriteCarsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DA0F1F1EC174910086BD7C /* FavoriteCarsViewController.swift */; };
 		01DA0F221EC1757E0086BD7C /* ApplicationTabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DA0F211EC1757E0086BD7C /* ApplicationTabbar.swift */; };
 		01DA0F3D1EC1EA550086BD7C /* FavoriteCarsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DA0F3C1EC1EA550086BD7C /* FavoriteCarsViewModel.swift */; };
@@ -69,6 +71,8 @@
 		019130271EC2CAAF0015E4BE /* Observer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
 		01BFF9361EC3B871002DE8BB /* AutoScout24Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoScout24Tests.swift; sourceTree = "<group>"; };
 		01BFF93A1EC3CF8D002DE8BB /* extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
+		01BFF93C1EC3DE31002DE8BB /* InternetChecker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InternetChecker.swift; sourceTree = "<group>"; };
+		01BFF93E1EC3DFC0002DE8BB /* UIDecorator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDecorator.swift; sourceTree = "<group>"; };
 		01DA0F1F1EC174910086BD7C /* FavoriteCarsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteCarsViewController.swift; sourceTree = "<group>"; };
 		01DA0F211EC1757E0086BD7C /* ApplicationTabbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationTabbar.swift; sourceTree = "<group>"; };
 		01DA0F3C1EC1EA550086BD7C /* FavoriteCarsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteCarsViewModel.swift; sourceTree = "<group>"; };
@@ -195,6 +199,8 @@
 				019130241EC2B0AF0015E4BE /* Constants.swift */,
 				019130271EC2CAAF0015E4BE /* Observer.swift */,
 				01BFF93A1EC3CF8D002DE8BB /* extensions.swift */,
+				01BFF93C1EC3DE31002DE8BB /* InternetChecker.swift */,
+				01BFF93E1EC3DFC0002DE8BB /* UIDecorator.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -576,6 +582,8 @@
 				01DA0F221EC1757E0086BD7C /* ApplicationTabbar.swift in Sources */,
 				019130281EC2CAAF0015E4BE /* Observer.swift in Sources */,
 				0132EAB41EC27A7600B71FFB /* DBInteractor.swift in Sources */,
+				01BFF93D1EC3DE31002DE8BB /* InternetChecker.swift in Sources */,
+				01BFF93F1EC3DFC0002DE8BB /* UIDecorator.swift in Sources */,
 				0190DCC41EC1484200771506 /* AppDelegate.swift in Sources */,
 				01BFF93B1EC3CF8D002DE8BB /* extensions.swift in Sources */,
 			);
